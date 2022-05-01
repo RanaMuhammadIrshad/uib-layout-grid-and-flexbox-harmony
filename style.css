@@ -1,0 +1,77 @@
+/* Original styles - don't edit these! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg1 {
+  background: url(bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add your styles below here*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  border: 0.5em solid #333333;
+  background-color: #333333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Method -1 */
+.bg1,
+.bg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.bg1 div,
+.bg2 div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  margin: 0.3rem auto;
+}
+
+.bg1 div:hover,
+.bg2 div:hover {
+  background-color: green;
+}
+/* Method-2 */
+
+/* div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  gap: 1rem;
+}
+
+.bg1, .bg2 {
+  height: 20rem;
+}
+
+.bg1 div, .bg2 div {
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+} 
+.bg1 div:hover,
+.bg2 div:hover{
+  background-color: green;
+}
+ */
